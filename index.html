@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="./CSS/style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form Validation</title>
+  </head>
+  <body>
+    <h1>Login</h1>
+
+    <form action="">
+      <div class="email_form">
+        <label for="email">Email: </label>
+        <input
+          type="email"
+          id="email"
+          placeholder="Email"
+          onblur="validateField('email')"
+        />
+        <p class="error_message" id="emailError">Insira um email válido.</p>
+      </div>
+
+      <div class="password_form">
+        <label for="password">Password:</label>
+        <input
+          type="password"
+          id="password"
+          placeholder="Password"
+          onblur="validateField('password')"
+        />
+        <p class="error_message" id="passwordError">
+          Insira uma senha mais forte.
+        </p>
+      </div>
+
+      <button class="submit_button" disabled>Enviar</button>
+      <button class="registration" disabled>Registration</button>
+    </form>
+
+    <script src="./JS/script.js"></script>
+  </body>
+</html>
